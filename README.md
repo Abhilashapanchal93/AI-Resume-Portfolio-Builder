@@ -20,7 +20,7 @@ AI-Resume-Portfolio-Builder is an GENAI-powered platform designed to optimize re
 
 An AI-powered Resume Builder, ATS Resume Optimizer, and Portfolio Generator built using Streamlit and Google Gemini API.
 This project helps users create ATS-friendly resumes, analyze job descriptions, calculate overall ATS match score, and generate a personal portfolio website — all in one place.
-
+-----------------------------------------------
 🛠 Tech Stack
 Category	Technology
 Frontend	Streamlit
@@ -30,7 +30,7 @@ PDF Parsing	PyPDF2
 Portfolio	HTML + Jinja2
 Charts	Matplotlib
 Environment	python-dotenv
-
+------------------------------------------------
 
 📂 Project Structure
 
@@ -50,7 +50,7 @@ AI-Resume-Builder/
     
     │── portfolio_generator.py
     
-
+------------------------------------------------
 🔐 Environment Setup
 
 Create a .env file in the root directory:
@@ -71,6 +71,7 @@ pip install -r requirements.txt
 4️⃣ Run the Application
 streamlit run app.py
 
+------------------------------------------------
 📊 ATS Score Logic (Overall Score)
 
 ATS score is calculated using weighted components:
@@ -89,12 +90,12 @@ Single source of truth
 
 Chart & score always match
 
-
+------------------------------------------------
 
 **🌍 Free Portfolio Hosting Platforms**
 
 https://base44.com
-
+------------------------------------------------
 
 
 **🧠 Future Enhancements**
@@ -107,21 +108,20 @@ Multi-page resume support
 
 PDF embedding of ATS score
 
-
+------------------------------------------------
 
 **🤝 Contributing**
 
 Contributions are welcome!
 Feel free to fork the repository and submit a pull request.
 
-
+------------------------------------------------
 
 **📜 License**
 
 This project is licensed under the MIT License.
 
-
-
+------------------------------------------------
 
 **⭐ Support**
 
