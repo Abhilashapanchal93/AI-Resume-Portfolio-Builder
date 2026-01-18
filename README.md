@@ -1,10 +1,15 @@
 About The Project
 AI-Resume-Portfolio-Builder is an GENAI-powered platform designed to optimize resumes for applicant tracking systems (ATS). By leveraging the Google Gemini LLM Model, the system enhances the likelihood of your resume passing through ATS filters and matching specific job descriptions.
 
+
 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
+
 📝 Resume Builder:Generate resume
+
 🌐 Portfolio Builder:Generate Portfolio
+
 📊 Ai resume Optimizer: Optimize resume from below option
+
       1.  💡 𝗝𝗼𝗯 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : Tailor your resume to match the job description perfectly!
       2.  🤖 𝗔𝗧𝗦 𝗖𝗼𝗺𝗽𝗮𝘁𝗶𝗯𝗶𝗹𝗶𝘁𝘆 𝗖𝗵𝗲𝗰𝗸: Ensure your resume passes ATS filters with ease!
       3.  📊 𝗦𝗸𝗶𝗹𝗹𝘀 𝗚𝗮𝗽 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀: Identify missing skills compared to the job requirements.
@@ -26,17 +31,25 @@ Portfolio	HTML + Jinja2
 Charts	Matplotlib
 Environment	python-dotenv
 
+
 📂 Project Structure
+
 AI-Resume-Builder/
+
 │── app.py
+
 │── requirements.txt
+
 │── README.md
-│── .env
-│
+
 └── utils/
+
     │── helper.py
+    
     │── processor.py
+    
     │── portfolio_generator.py
+    
 
 🔐 Environment Setup
 
@@ -76,13 +89,14 @@ Single source of truth
 
 Chart & score always match
 
+
+
 🌍 Free Portfolio Hosting Platforms
 
 https://base44.com
 
-https://pages.github.com
 
-https://netlify.com
+
 
 🧠 Future Enhancements
 
@@ -94,14 +108,21 @@ Multi-page resume support
 
 PDF embedding of ATS score
 
+
+
 🤝 Contributing
 
 Contributions are welcome!
 Feel free to fork the repository and submit a pull request.
 
+
+
 📜 License
 
 This project is licensed under the MIT License.
+
+
+
 
 ⭐ Support
 
