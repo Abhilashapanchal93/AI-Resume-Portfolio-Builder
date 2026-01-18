@@ -44,18 +44,6 @@ Create a .env file in the root directory:
 
 GOOGLE_API_KEY=your_gemini_api_key_here
 
-
-⚠️ Do not upload .env to GitHub
-
-📦 Installation
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/ai-resume-builder.git
-cd ai-resume-builder
-
-2️⃣ Create Virtual Environment
-python -m venv venv
-
-
 Activate:
 
 # Windows
