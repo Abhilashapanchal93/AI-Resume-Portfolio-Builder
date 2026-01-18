@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }} | Creative Portfolio</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            padding: 40px;
+            color: white;
+        }
+        .card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>{{ name }}</h1>
+<p>{{ profession }}</p>
+<p>{{ email }} | {{ phone }}</p>
+
+<div class="card">
+    <h2>Education</h2>
+    <p>{{ edu }}</p>
+</div>
+
+<div class="card">
+    <h2>Experience</h2>
+    <p>{{ exp }}</p>
+</div>
+
+<div class="card">
+    <h2>Skills</h2>
+    <p>{{ skills }}</p>
+</div>
+
+<div class="card">
+    <h2>Projects</h2>
+    <p>{{ project }}</p>
+</div>
+
+<div class="card">
+    <h2>Certificates</h2>
+    <p>{{ certificate }}</p>
+</div>
+
+</body>
+</html>
