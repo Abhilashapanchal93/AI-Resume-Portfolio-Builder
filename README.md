@@ -20,16 +20,25 @@ AI-Resume-Portfolio-Builder is an GENAI-powered platform designed to optimize re
 
 An AI-powered Resume Builder, ATS Resume Optimizer, and Portfolio Generator built using Streamlit and Google Gemini API.
 This project helps users create ATS-friendly resumes, analyze job descriptions, calculate overall ATS match score, and generate a personal portfolio website — all in one place.
+
 -----------------------------------------------
+
 🛠 Tech Stack
-Category	Technology
-Frontend	Streamlit
-AI Model	Google Gemini
-Resume PDFs	ReportLab, FPDF
-PDF Parsing	PyPDF2
-Portfolio	HTML + Jinja2
-Charts	Matplotlib
-Environment	python-dotenv
+
+Category-----	Technology
+
+Frontend-----	Streamlit
+
+AI Model-----	Google Gemini
+
+Resume-----  PDFs	ReportLab, FPDF
+
+PDF Parsing-----	PyPDF2
+
+Portfolio-----	HTML + Jinja2
+
+Environment-----	python-dotenv
+
 ------------------------------------------------
 
 📂 Project Structure
