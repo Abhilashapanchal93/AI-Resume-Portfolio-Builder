@@ -16,8 +16,9 @@ st.title("📄 AI Resume & Portfolio Builder")
 # tabs
 tab1, tab2, tab3 = st.tabs([
     "📝 Resume Builder",
-    "📊 Ai resume Optimizer",
-    "🌐 Portfolio Builder" 
+    "🌐 Portfolio Builder",
+    "📊 Ai resume Optimizer"
+     
 ])
 
 #Resume Builder
@@ -104,9 +105,43 @@ with tab1:
         - https://resume.io/resume-templates
         - https://flowcv.com/
         """)
-
-#ATS Resume optimizer
+#Portfolio Generator
 with tab2:
+    st.subheader("🌐 Portfolio Generator")
+
+    theme = st.radio(
+        "Choose Portfolio Theme",
+        ["Basic", "Modern", "Creative"],
+        horizontal=True
+    )
+
+    if st.button("🚀 Generate Portfolio"):
+        if "resume_data" not in st.session_state:
+            st.warning("Please generate resume first.")
+        else:
+            portfolio_file = generate_portfolio(
+                st.session_state.resume_data,
+                theme=theme
+            )
+
+            with open(portfolio_file, "r", encoding="utf-8") as f:
+                st.download_button(
+                    "⬇ Download Portfolio Website",
+                    f,
+                    file_name="portfolio.html",
+                    mime="text/html"
+                )
+
+            st.success("Portfolio generated successfully!")
+
+    st.markdown("""
+    **Free Portfolio Website Builders**
+    - https://base44.com
+    
+    """)
+    
+#ATS Resume optimizer
+with tab3:
     st.subheader("📊 ATS Resume optimizer")
     st.markdown("Optimize your resume for ATS with AI-driven insights and personalized feedback!")
 
@@ -213,38 +248,3 @@ with tab2:
 
 
 
-#Portfolio Generator
-with tab3:
-    st.subheader("🌐 Portfolio Generator")
-
-    theme = st.radio(
-        "Choose Portfolio Theme",
-        ["Basic", "Modern", "Creative"],
-        horizontal=True
-    )
-
-    if st.button("🚀 Generate Portfolio"):
-        if "resume_data" not in st.session_state:
-            st.warning("Please generate resume first.")
-        else:
-            portfolio_file = generate_portfolio(
-                st.session_state.resume_data,
-                theme=theme
-            )
-
-            with open(portfolio_file, "r", encoding="utf-8") as f:
-                st.download_button(
-                    "⬇ Download Portfolio Website",
-                    f,
-                    file_name="portfolio.html",
-                    mime="text/html"
-                )
-
-            st.success("Portfolio generated successfully!")
-
-    st.markdown("""
-    **Free Portfolio Website Builders**
-    - https://base44.com
-    
-    """)
-    
