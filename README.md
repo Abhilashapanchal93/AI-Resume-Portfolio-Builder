@@ -13,17 +13,114 @@ AI-Resume-Portfolio-Builder is an GENAI-powered platform designed to optimize re
       6.  📄 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗲𝗱 𝗖𝗼𝘃𝗲𝗿 𝗟𝗲𝘁𝘁𝗲𝗿𝘀: Generate a personalized cover letter instantly.
       7.  ⚡ 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗱 𝗥𝗲𝘀𝘂𝗺𝗲: Craft an optimized resume that stands out!
 
-Key Technologies:
-Google Gemini LLM Model: Advanced AI for analyzing resumes and job descriptions.
-pdf2image: Converts PDF resumes into image formats for preprocessing.
-fpdf: Generates PDF documents programmatically for enhanced resume creation.
-PyPDF2: Extracts, merges, and manipulates PDF content efficiently.
+An AI-powered Resume Builder, ATS Resume Optimizer, and Portfolio Generator built using Streamlit and Google Gemini API.
+This project helps users create ATS-friendly resumes, analyze job descriptions, calculate overall ATS match score, and generate a personal portfolio website — all in one place.
 
-Use Cases:
-Resume Optimization: Tailors resumes to pass Applicant Tracking System (ATS) filters.
-Job Description Analysis: Analyzes job postings to provide actionable feedback for resume refinement.
-PDF Manipulation: Simplifies resume uploads and adjustments by enabling seamless PDF processing.
+🛠 Tech Stack
+Category	Technology
+Frontend	Streamlit
+AI Model	Google Gemini
+Resume PDFs	ReportLab, FPDF
+PDF Parsing	PyPDF2
+Portfolio	HTML + Jinja2
+Charts	Matplotlib
+Environment	python-dotenv
 
-Personalized Feedback: Provides insights to close skill gaps and align with job requirements.
-ATS Compatibility: Formats and structures resumes to meet ATS standards, improving selection odds.
-AI-Powered Efficiency: Uses advanced AI models and tools for precise, automated resume enhancement.
+📂 Project Structure
+AI-Resume-Builder/
+│── app.py
+│── requirements.txt
+│── README.md
+│── .env
+│
+└── utils/
+    │── helper.py
+    │── processor.py
+    │── portfolio_generator.py
+
+🔐 Environment Setup
+
+Create a .env file in the root directory:
+
+GOOGLE_API_KEY=your_gemini_api_key_here
+
+
+⚠️ Do not upload .env to GitHub
+
+📦 Installation
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/ai-resume-builder.git
+cd ai-resume-builder
+
+2️⃣ Create Virtual Environment
+python -m venv venv
+
+
+Activate:
+
+# Windows
+venv\Scripts\activate
+
+# Mac/Linux
+source venv/bin/activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Run the Application
+streamlit run app.py
+
+📊 ATS Score Logic (Overall Score)
+
+ATS score is calculated using weighted components:
+
+Component	Weight
+Keyword Match	50%
+Skill Match	      30%
+Job Title Match	20%
+Total	100%
+
+This ensures:
+
+Realistic ATS score
+
+Single source of truth
+
+Chart & score always match
+
+🌍 Free Portfolio Hosting Platforms
+
+https://base44.com
+
+https://pages.github.com
+
+https://netlify.com
+
+🧠 Future Enhancements
+
+Skill-wise ATS breakdown
+
+Resume vs JD keyword table
+
+Multi-page resume support
+
+PDF embedding of ATS score
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repository and submit a pull request.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+
+🐛 Report issues
+
+💡 Suggest features
